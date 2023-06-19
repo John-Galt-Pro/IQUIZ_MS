@@ -35,6 +35,8 @@
 .form {
 
     display: flex;
+    align-items: center;
+    gap: 20px;
 
     &__input {
         display: block;
@@ -62,6 +64,6 @@
         background: linear-gradient(180deg, #ed769c 0%, #bb466b 100%);
         border-radius: 8px;
         border: none;
-        margin-top: 20px;
+
     }
 }

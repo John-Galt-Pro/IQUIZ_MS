@@ -1,7 +1,11 @@
 'use strict';
 
-initSwiper();
-
+ window.addEventListener('load', function() {
+      // Проверка ширины экрана при загрузке и изменении размера окна
+      if (window.matchMedia('(max-width: 1024px)').matches) {
+        initSwiper();
+      }
+    });
 const modalTrigger = document.querySelectorAll("[data-modal]"),
 	  modal = document.querySelector(".modal");
 
@@ -28,12 +32,14 @@ document.addEventListener('keydown', (event) => {
 
 function initSwiper () {
 const swiper = new Swiper('.swiper-container', {
-   loop:true,
+   
     centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
   },
+   
+  loop:true,
  
 
     breakpoints: {
@@ -43,19 +49,16 @@ const swiper = new Swiper('.swiper-container', {
 		},
 
 		768: {
-			slidesPerView: 2,
+			slidesPerView: 1,
 			spaceBetween: 20,
 		},
 
 		1200: {
-			slidesPerView: 3,
+			slidesPerView: 1,
 			spaceBetween: 20,
 		},
 
-		1720: {
-			slidesPerView: 4,
-			spaceBetween: 20,
-		},
+		
 	},
 
 
