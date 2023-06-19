@@ -1,0 +1,18 @@
+.subheading {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    color: #0D0D0D;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 84px;
+        top: 34px;
+        width: 170px;
+        height: 1px;
+        transform: translateX(-50%);
+
+        border: 2px dashed #ED769C;
+    }
+}

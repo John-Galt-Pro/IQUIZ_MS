@@ -1,0 +1,67 @@
+.footer {
+    width: 100%;
+    background: url('../../images/footer/footer-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+
+    &__wrapper {
+        position: relative;
+        padding-top: 75px;
+        min-height: 1080px;
+        text-align: center;
+
+    }
+
+    &__info {
+        margin-left: 60%;
+        padding-top: 220px;
+        max-width: 430px;
+    }
+
+    &__descr {
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 40px;
+    }
+
+
+}
+
+.form {
+
+    display: flex;
+
+    &__input {
+        display: block;
+        max-width: 430px;
+        width: 100%;
+        border: 1px solid #a7a7a7;
+        border-radius: 4px;
+        padding: 19px 20px;
+        outline: transparent;
+
+        &:placeholder {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #a3a3a3;
+        }
+    }
+
+    &__btn {
+        max-width: 243px;
+        width: 100%;
+        height: 60px;
+        background: linear-gradient(180deg, #ed769c 0%, #bb466b 100%);
+        border-radius: 8px;
+        border: none;
+        margin-top: 20px;
+    }
+}

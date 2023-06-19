@@ -1,0 +1,79 @@
+.explanation {
+    padding-top: 180px;
+    font-size: 18px;
+    position: relative;
+    background: url('../../images/explanation/explanation-bg.png');
+    background-position: left bottom;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 430px;
+        width: 100%;
+        font-size: 18px;
+        color: #515151;
+        padding: 130px 0;
+
+        & p {
+            margin-top: 10px;
+        }
+    }
+
+    .title {
+        margin-top: 124px;
+
+        &:after {
+            width: 50%;
+            left: -15%;
+        }
+
+        &:before {
+            width: 40%;
+            left: 0;
+        }
+    }
+
+    .subtitle {
+        margin-top: 46px;
+        text-align: left;
+
+
+        &__secondary {
+            margin-top: 25px;
+        }
+
+        &__tertiary {
+            margin-top: 53px;
+            font-weight: 700;
+        }
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        left: 70px;
+        position: relative;
+    }
+
+    &__image-double {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+
+}

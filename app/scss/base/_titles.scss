@@ -1,0 +1,32 @@
+.title {
+    position: relative;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    z-index: 5;
+
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 110%;
+        height: 41px;
+        left: -5%;
+        top: 14px;
+        background: #FFCEDE;
+        border-radius: 40px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 65%;
+        height: 1px;
+        left: 15%;
+
+        top: 60px;
+
+        border: 2px dashed #000000;
+    }
+}

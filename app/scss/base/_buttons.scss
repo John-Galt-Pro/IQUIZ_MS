@@ -1,0 +1,25 @@
+.button {
+    position: relative;
+    width: 340px;
+    height: 68px;
+    border-radius: 8px;
+    background: $main-color;
+    border: none;
+
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+
+    text-align: center;
+
+    transition: 0.5s all;
+    &:hover {
+        box-shadow: 0 25px 20px rgba(171, 4, 54, 0.3);
+    }
+
+    &:active {
+        box-shadow: inset 0 25px 20px rgba(56, 15, 27, 0.3);
+        color: rgb(211, 211, 211);
+        transform: translateY(5px);
+    }
+}
